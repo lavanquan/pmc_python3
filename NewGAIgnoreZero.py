@@ -779,7 +779,7 @@ while index < int(index_range):
         #     print indi["num_gen"], len(indi["T"]), len(indi["move"]), len(indi["gen"])
         # for indi in population:
         #     print indi
-        indi, conv = evolution(maxIterator=200, pc=0.8, pm=0.5, m_ran=float(m_ran), m_uni=float(m_uni), w=0)
+        indi, conv = evolution(maxIterator=5000, pc=0.8, pm=0.5, m_ran=float(m_ran), m_uni=float(m_uni), w=0)
 
         end_time = time.time()
         sum_lifetime = sum_lifetime + indi["fitness"]
